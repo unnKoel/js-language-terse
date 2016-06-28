@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    //一个函数总会返回一个值。如果没有指定返回值，则返回 undefined
+    var add = function () {
+
+    };
+    document.write(add() ? true : false);
+
+    //如果函数调用时前面加上了new,且返回值不是一个对象，则返回this（该新对象）
+    var MyObject = function (name) {
+        this._name = name;
+//        return 'a';
+        return [2, 3]
+    };
+
+    var myObj = new MyObject('common');
+    console.log(myObj[0]);
+</script>
+</html>

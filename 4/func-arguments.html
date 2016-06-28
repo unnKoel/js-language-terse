@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    var sum = function () {
+        var i, sum = 0;
+        console.log(arguments);
+        for (i = 0; i < arguments.length; i++) {
+            sum += arguments[i];
+        }
+        return sum;
+    };
+
+    document.writeln(sum(4, 8, 15, 16, 23, 42));
+
+    var array = new Array(1, 2, 3);
+    console.log(Array.prototype);
+    var v;
+    for (v in array) {
+        document.writeln(v);
+    }
+
+</script>
+</html>

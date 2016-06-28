@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    var another_stooge = {
+        name: 'common',
+        age: 27,
+        getAge: function () {
+            return this.age
+        }
+    };
+
+    console.log(another_stooge);
+    console.log(another_stooge.__proto__);
+
+    var name;
+    for (name in another_stooge) {
+        if (typeof another_stooge[name] !== 'function' && another_stooge.hasOwnProperty(name)) {
+            document.write(name + ':' + another_stooge[name] + '<br>');
+        }
+    }
+</script>
+</html>
