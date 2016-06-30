@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    var add = function (a, b) {
+        if (typeof a === 'object') {
+            if (a instanceof Number) {
+                console.log('a is a Number.')
+            }
+        }
+        if (typeof a !== 'number' || typeof b !== 'number') {
+            throw{
+                name: 'TypeError',
+                message: 'add needs numbers'
+            }
+        }
+    };
+
+    var try_it = function () {
+        var a = new Number(3);
+//        var b = new Number(4);
+        try {
+            add(a);
+        } catch (e) {
+            document.writeln(e.name + ":" + e.message);
+        }
+    };
+
+    try_it();
+</script>
+</html>
