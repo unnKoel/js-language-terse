@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var numbers = ['zero', 'one', 'two', 'shi', 'go'];
+    delete numbers[2];
+    for (var i = 0; i < numbers.length; i++) {
+        document.writeln(numbers[i]);
+    }
+
+    var numbers2 = ['zero', 'one', 'two', 'shi', 'go'];
+    numbers2.splice(2, 1);
+    for (var i = 0; i < numbers2.length; i++) {
+        document.writeln(numbers2[i]);
+    }
+</script>
+</body>
+</html>
