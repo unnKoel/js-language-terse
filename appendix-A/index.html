@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>return 返回,表达式的开始部分必须和return 在同一行</title>
+</head>
+<body>
+<script>
+    //return 返回,表达式的开始部分必须和return 在同一行,否则放回undefined
+    var pi = function () {
+        var status = 5;
+        return
+        {
+            status: status
+        }
+    };
+
+    document.writeln(pi());
+</script>
+</body>
+</html>
