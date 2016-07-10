@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>null值</title>
+</head>
+<body>
+<script>
+    document.writeln(typeof null);
+
+
+    //判断是否为null
+    document.writeln(null === null);
+
+    function isNull(my_value) {
+        return !my_value && typeof my_value === 'object';
+    }
+
+    document.writeln(isNull({}));
+    document.writeln(isNull(null));
+</script>
+</body>
+</html>

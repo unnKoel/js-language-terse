@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪数组</title>
+</head>
+<body>
+<script>
+    function isArray(value) {
+        return Object.prototype.toString.apply(value) === '[object Array]';
+    }
+
+    function arguments_phony_arrays() {
+        return isArray(arguments);
+    }
+
+    document.writeln(arguments_phony_arrays());
+</script>
+</body>
+</html>
