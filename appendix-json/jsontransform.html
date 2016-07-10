@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //    var jsonStr = '{name:\'zyj\',age:\'27\'}';
+
+    var jsonStr = '{"name":"zyj","age":27}';
+    var json;
+    json = eval('(' + jsonStr + ')');
+    console.log(json);
+
+    json = JSON.parse(jsonStr);
+    console.log(json);
+
+    jsonStr = JSON.stringify(json);
+    document.writeln(jsonStr);
+
+</script>
+</body>
+</html>
